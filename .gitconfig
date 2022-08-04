@@ -4,7 +4,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 [user]
-	git config --global user.name "Team Kimchi Ravioli TB05 Miguel Pacheco"
-	git config --global user.email "S10247805@connect.np.edu.sg"
+	git config --global user.name "Team Kimchi Ravioli TB05 Shyanne Leong"
+	git config --global user.email "S10240022@connect.np.edu.sg"
+	git config --global --list 
 [core]
 	editor = \"C:\\Users\\psych\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
