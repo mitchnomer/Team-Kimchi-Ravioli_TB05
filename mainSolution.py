@@ -13,12 +13,16 @@ def main():
         if coh_loss == []: #this means no loss occurred
             f.write(f'[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n')
         else:
-            for i in range(len(coh_loss)):
-                f.write(f'[CASH DEFICIT] DAY: {coh_loss[i][0]}, AMOUNT: {coh_loss[i][0]}\n')
+            for r in range(len(coh_loss)):
+                f.write(f'[CASH DEFICIT] DAY: {coh_loss[r][0]}, AMOUNT: {coh_loss[r][0]}\n')
 
         if pnl_loss == []: #this means there were no losses
             f.write(f'[NET PROFIT SURPLUS] NET PROFIT ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n')
         else:
-            for i in range(len(pnl_loss)):
-                f.write(f'[PROFIT DEFICIT] DAY: {pnl_loss[i][0]}, AMOUNT: {pnl_loss[i][1]}\n')
+            for r in range(len(pnl_loss)):
+                f.write(f'[PROFIT DEFICIT] DAY: {pnl_loss[r][0]}, AMOUNT: {pnl_loss[r][1]}\n')
+    
+    print("output is successful")
+
+main()
         
